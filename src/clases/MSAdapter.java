@@ -12,16 +12,16 @@ public class MSAdapter extends MetricSystem {
 	public Double getMesurement() {
 		double i= f.getValue();
 		if(f.getM().toUpperCase().equals("KM")) {
-			i=i*0.0003048;
+			i=i*3281;
 		}
 		if(f.getM().toUpperCase().equals("M")) {
-			i=i*0.3048;
+			i=i*3.281;
 		}
 		if(f.getM().toUpperCase().equals("CM")) {
-			i=i*30.48;
+			i=i/30.38;
 		}
 		if(f.getM().toUpperCase().equals("MM")) {
-			i=i*304.8;
+			i=i/304.8;
 		}
 		return i;
 	}
